@@ -11,8 +11,9 @@ def soln(str1,str2):
   #print l1
   #print l2
   l3 = []
+  status = False
   if len(l1) != len(l2):
-   return False
+   return status
   else:
    for i in range(len(l1)+1):
     for c in l1:
@@ -20,10 +21,10 @@ def soln(str1,str2):
       l3.append(True)
       l1.remove(c)
       l2.remove(c)
- 
+     status = True
   assert (len1 == len(l3))
-  return True    
-      
+  return status
+
 
 print soln(s1,s2)
 
