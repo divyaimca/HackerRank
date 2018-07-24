@@ -21,8 +21,9 @@ def soln(str1,str2):
       l3.append(True)
       l1.remove(c)
       l2.remove(c)
-     status = True
-  assert (len1 == len(l3))
+#   assert (len1 == len(l3))
+  if len1 == len(l3):
+   status = True
   return status
 
 
