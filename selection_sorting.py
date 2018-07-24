@@ -5,12 +5,15 @@ def selection_sort(arr):
 	
 		posMax = 0
 		for location in range(1,len(arr)+1):
-			if arr[posMax] > arr[i]:
+			if arr[location] > arr[posMax]:
+				posMax = location
+				
+		arr[posMax],arr[backfill]=arr[backfill],arr[posMax]
 				
 				
 				
 
-	print arr
+	return arr
 			
 			
 
